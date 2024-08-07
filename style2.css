@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #f0f0f0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 1.2em;
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffeb3b;
+}
+
+.myvideo {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.content {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    z-index: 1;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: white;
+    width: calc(33.333% - 16px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    text-align: center;
+    border: 2px solid #3a6cf4;
+    border-radius: 10px;
+    color: black;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.icon i {
+    font-size: 48px;
+    color: #3a6cf4;
+}
+
+.info h3 {
+    font-size: 24px;
+    margin-top: 16px;
+}
+
+.info p {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 16px);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}

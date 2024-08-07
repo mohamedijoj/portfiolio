@@ -1,0 +1,111 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+header {
+    background-color: #f0f0f0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 1.2em;
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffeb3b;
+}
+
+.myvideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.contact {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.left-side {
+    flex: 1;
+    background-color: #f0f0f0; /* White smoke background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-container {
+    max-width: 600px;
+    width: 100%;
+}
+
+.right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3); /* Overlay to ensure text visibility */
+}
+
+.right-side h1 {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+}
+
+input.form-control, textarea.form-control {
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type=submit], input[type=reset] {
+    background-color: #601cfc;
+    border: none;
+    color: white;
+    padding: 12px 28px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+    background-color: #480ac4;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: black;
+}
